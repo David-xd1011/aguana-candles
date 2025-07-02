@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aguaná Candles - Momentos únicos, detalles que perduran</title>
+    <!-- Carga de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F5F5DC; /* Un beige muy claro */
+            color: #333333; /* Texto oscuro para contraste */
+        }
+        .hero-bg {
+            /* Usar una imagen de fondo sutil o un degradado para el héroe */
+            background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('img/fondo.png');
+            background-size: cover;
+            background-position: center;
+        }
+        .golden-text {
+            color: #B8860B; /* Un tono dorado sutil */
+        }
+        .golden-border {
+            border-color: #B8860B;
+        }
+        .product-card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Encabezado -->
+    <header class="bg-black text-white shadow-lg py-4 px-6 md:px-12">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-3">
+                <!-- Logo de Aguaná Candles -->
+                <img src="img/logo.png" alt="Aguaná Candles Logo" class="h-12 w-auto rounded-full shadow-md">
+                <span class="text-3xl font-bold tracking-wider golden-text">Aguaná Candles</span>
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-lg font-medium hover:text-amber-200 transition-colors duration-300 rounded-md p-2">Inicio</a>
+                <a href="#products" class="text-lg font-medium hover:text-amber-200 transition-colors duration-300 rounded-md p-2">Velas</a>
+                <a href="#about" class="text-lg font-medium hover:text-amber-200 transition-colors duration-300 rounded-md p-2">Nosotros</a>
+                <a href="#contact" class="text-lg font-medium hover:text-amber-200 transition-colors duration-300 rounded-md p-2">Contacto</a>
+            </div>
+            <!-- Menú hamburguesa para móviles -->
+            <button class="md:hidden text-white focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Sección Hero -->
+    <section id="home" class="hero-bg h-screen flex items-center justify-center text-center text-white relative">
+        <div class="relative z-10 p-6 max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6 tracking-tight drop-shadow-lg golden-text">
+                Momentos únicos, detalles que perduran.
+            </h1>
+            <p class="text-xl md:text-2xl mb-10 font-light drop-shadow-md">
+                Velas artesanales personalizadas para iluminar tus celebraciones.
+            </p>
+            <a href="#products" class="bg-amber-600 hover:bg-amber-700 text-white font-semibold py-4 px-10 rounded-full text-lg shadow-xl transition-all duration-300 transform hover:scale-105">
+                Descubre Nuestra Colección
+            </a>
+        </div>
+    </section>
+
+    <!-- Sección de Productos Destacados -->
+    <section id="products" class="py-16 md:py-24 bg-amber-50">
+        <div class="container mx-auto px-6 md:px-12">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 text-black">Nuestras Velas Personalizadas</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Producto 1: Vela Ángel -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden product-card border golden-border">
+                    <img src="img/angel.png" alt="Vela en forma de Ángel" class="w-full h-72 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2 text-black">Vela Ángel Guardián</h3>
+                        <p class="text-gray-600 mb-4">Un símbolo de pureza y protección.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-3xl font-bold text-amber-700">$25.00</span>
+                            <button class="bg-black hover:bg-gray-800 text-white font-medium py-3 px-6 rounded-full transition-colors duration-300">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 2: Vela Corazón -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden product-card border golden-border">
+                    <img src="img/mallac.png" alt="Vela en forma de Corazón" class="w-full h-72 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2 text-black">Vela Corazón Eterno</h3>
+                        <p class="text-gray-600 mb-4">Ideal para expresar amor y cariño.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-3xl font-bold text-amber-700">$22.00</span>
+                            <button class="bg-black hover:bg-gray-800 text-white font-medium py-3 px-6 rounded-full transition-colors duration-300">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 3: Vela Flor Peonía -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden product-card border golden-border">
+                    <img src="img/florp.png" alt="Vela en forma de Flor Peonía" class="w-full h-72 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2 text-black">Vela Flor de Peonía</h3>
+                        <p class="text-gray-600 mb-4">Elegancia floral para cualquier ambiente.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-3xl font-bold text-amber-700">$28.00</span>
+                            <button class="bg-black hover:bg-gray-800 text-white font-medium py-3 px-6 rounded-full transition-colors duration-300">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 4: Vela Cubo de Burbujas -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden product-card border golden-border">
+                    <img src="img/cubo.png" alt="Vela en forma de Cubo de Burbujas" class="w-full h-72 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2 text-black">Vela Cubo Minimalista</h3>
+                        <p class="text-gray-600 mb-4">Diseño moderno y sofisticado.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-3xl font-bold text-amber-700">$20.00</span>
+                            <button class="bg-black hover:bg-gray-800 text-white font-medium py-3 px-6 rounded-full transition-colors duration-300">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 5: Vela Caras Abstractas -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden product-card border golden-border">
+                    <img src="img/caras.png" alt="Vela en forma de Caras Abstractas" class="w-full h-72 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2 text-black">Vela Rostros del Arte</h3>
+                        <p class="text-gray-600 mb-4">Una pieza de arte para tu espacio.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-3xl font-bold text-amber-700">$30.00</span>
+                            <button class="bg-black hover:bg-gray-800 text-white font-medium py-3 px-6 rounded-full transition-colors duration-300">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 6: Vela León (Placeholder) -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden product-card border golden-border">
+                    <img src="img/leon.png" alt="Vela en forma de León" class="w-full h-72 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2 text-black">Vela Majestuoso León</h3>
+                        <p class="text-gray-600 mb-4">Fuerza y presencia en tu hogar.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-3xl font-bold text-amber-700">$35.00</span>
+                            <button class="bg-black hover:bg-gray-800 text-white font-medium py-3 px-6 rounded-full transition-colors duration-300">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 7: Vela Oveja (Placeholder) -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden product-card border golden-border">
+                    <img src="img/ovejan.png" alt="Vela en forma de Oveja" class="w-full h-72 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2 text-black">Vela Dulce Oveja</h3>
+                        <p class="text-gray-600 mb-4">Ternura y calma para cualquier espacio.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-3xl font-bold text-amber-700">$20.00</span>
+                            <button class="bg-black hover:bg-gray-800 text-white font-medium py-3 px-6 rounded-full transition-colors duration-300">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección "Sobre Nosotros" -->
+    <section id="about" class="py-16 md:py-24 bg-black text-white">
+        <div class="container mx-auto px-6 md:px-12 flex flex-col lg:flex-row items-center gap-12">
+            <div class="lg:w-1/2 text-center lg:text-left">
+                <h2 class="text-4xl md:text-5xl font-bold mb-8 golden-text">Nuestra Esencia: Aguaná Candles</h2>
+                <p class="text-lg md:text-xl leading-relaxed mb-6">
+                    En <strong>Aguaná Candles</strong>, cada vela es una obra de arte. Combinamos diseño innovador, ingredientes naturales y sostenibilidad para crear piezas únicas que transforman cualquier espacio. Te acompañamos en tus eventos especiales (bodas, cumpleaños, eventos corporativos y ceremonias temáticas), brindando bienestar, calidez y estilo con calidad artesanal y compromiso ambiental.
+                </p>
+                <p class="text-lg md:text-xl leading-relaxed">
+                    Creemos en la magia de los detalles y en el poder de una vela para crear atmósferas inolvidables. Con Aguaná Candles, no solo enciendes una vela, enciendes un momento.
+                </p>
+            </div>
+            <div class="lg:w-1/2">
+                <img src="img/base.png" alt="base" class="rounded-xl shadow-2xl w-full h-auto object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contact" class="py-16 md:py-24 bg-amber-50">
+        <div class="container mx-auto px-6 md:px-12">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 text-black">Contáctanos</h2>
+            <div class="max-w-3xl mx-auto bg-white p-8 md:p-12 rounded-xl shadow-lg border golden-border">
+                <form class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-lg font-medium text-gray-700 mb-2">Nombre Completo</label>
+                        <input type="text" id="name" name="name" class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-amber-500 focus:border-amber-500 text-lg" placeholder="Tu Nombre">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-lg font-medium text-gray-700 mb-2">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-amber-500 focus:border-amber-500 text-lg" placeholder="tu.correo@ejemplo.com">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-lg font-medium text-gray-700 mb-2">Mensaje</label>
+                        <textarea id="message" name="message" rows="6" class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-amber-500 focus:border-amber-500 text-lg" placeholder="Escribe tu mensaje aquí..."></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="bg-black hover:bg-gray-800 text-white font-semibold py-4 px-10 rounded-full text-lg shadow-xl transition-all duration-300 transform hover:scale-105">
+                            Enviar Mensaje
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer class="bg-black text-white py-8 px-6 md:px-12">
+        <div class="container mx-auto text-center">
+            <p class="text-lg mb-4">&copy; 2025 Aguaná Candles. Todos los derechos reservados.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="text-gray-400 hover:text-amber-200 transition-colors duration-300">Facebook</a>
+                <a href="#" class="text-gray-400 hover:text-amber-200 transition-colors duration-300">Instagram</a>
+                <a href="#" class="text-gray-400 hover:text-amber-200 transition-colors duration-300">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
